@@ -46,6 +46,7 @@ ol {
 /* A elements get default styles */
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 /* Make images easier to work with */
