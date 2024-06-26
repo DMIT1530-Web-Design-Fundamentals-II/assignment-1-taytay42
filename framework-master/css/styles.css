@@ -31,7 +31,9 @@ li {
   color: #1E426E;
 }
 
-h1 {
+h1,
+h2,
+p {
   margin-top: 1.5rem;
   text-align: center;
 }
@@ -49,13 +51,32 @@ h1 {
   font-weight: 700;
 }
 
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8f4F9;
+  height: 5rem;
+}
+
+.footer-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footer p {
+  justify-self: left;
+  margin: 0;
+}
+
 /* index page nav */
 .index-nav {
   background-color: #e8f4F9;
   max-width: 100%;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -66,7 +87,7 @@ h1 {
   padding: 1rem;
 }
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -84,28 +105,81 @@ h1 {
 }
 
 /* Index Main content */
-.main-content{
-padding: 1.75rem;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-top: 0;
+  justify-content: center;
 }
 
-h2, p{
-  text-align: center;
-}
-
-.numbers p:nth-child(odd){
+.numbers p:nth-child(odd) {
   font-weight: 700;
   font-size: 2rem;
 }
 
-.blue-box{
+.blue-box {
+  display: flex;
   background-color: #1E426E;
   color: white;
-  height: 2rem;
-  align-content: center;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 28rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.graphs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.chart {
+  font-size: 0.75rem;
+}
+
+.blue-box p {
+  margin-top: 0;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Community */
+.community{
+  justify-content: center;
+}
+
+.container-comm{
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin-top: 1rem;
+}
+
+.community .blue-box{
+  width: 100%; /* Full width by default */
+  max-width: 100%; /* Maximum width to adjust with container */
+  margin: auto;
+}
+
+.building{
+  width: 100%;
+  height: 20rem;
+  background-image:url(../img/building-stronger.png);
+  justify-content: center;
+  text-align: center;
 }
 
 /* Hover States */
-
 .navigation li:hover {
   background-color: #78a04d;
 }
@@ -115,18 +189,25 @@ h2, p{
   color: #78a04d;
 }
 
-.row li:hover{
-background-color: #1E426E;
-color: white;
+.row li:hover {
+  background-color: #1E426E;
+  color: white;
 }
 
-.blue-box:hover{
+.blue-box:hover {
   background-color: #e8f4F9;
   border: 0.1rem solid #1E426E;
   color: #1E426E;
 }
 
 /* Pie Chart */
+.pie-wrapper {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
 @property --p {
   syntax: '<number>';
   inherits: true;
@@ -197,7 +278,7 @@ body {
 /* Bar Graph */
 .chart div {
   font: 12px sans-serif;
-  background-color: #750CE8;
+  background-color: #EBD568;
   text-align: right;
   padding: 3px;
   margin: 1px;
