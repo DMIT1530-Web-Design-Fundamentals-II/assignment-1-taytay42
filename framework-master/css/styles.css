@@ -1,129 +1,205 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header */
 
-
-.navigation{
-    display: flex;
-    justify-content: right;
-    background-color:#1E426E;
-    max-width: 100%;
+.navigation {
+  display: flex;
+  justify-content: right;
+  background-color: #1E426E;
+  max-width: 100%;
 }
 
-.navigation li{
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    text-align: center;
-    background-color:#1E426E;
-    color: white;
-    padding: 0.5rem;
-    border-left: 0.05rem solid white;
-    border-right: 0.05rem solid white;
+.navigation li {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #1E426E;
+  color: white;
+  padding: 0.5rem;
+  border-left: 0.05rem solid white;
+  border-right: 0.05rem solid white;
 }
 
 .banner {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-h1, li{
-color: #1E426E;
+h1,
+li {
+  color: #1E426E;
 }
 
-h1{
-    margin-top: 1.5rem;
-    text-align: center;
+h1 {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
-.nav-2{
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+.nav-2 {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.nav-2 li{
-    text-transform: uppercase;
-    font-weight: 700;
+.nav-2 li {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* index page nav */
+.index-nav {
+  background-color: #e8f4F9;
+  max-width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row li {
+  width: 13rem;
+  font-weight: 700;
+  color: #2A5EA5;
+  background-color: white;
+  border: 0.1rem solid #e2e2e2;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Index Main content */
+.main-content{
+padding: 1.75rem;
+}
+
+h2, p{
+  text-align: center;
+}
+
+.numbers p:nth-child(odd){
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.blue-box{
+  background-color: #1E426E;
+  color: white;
+  height: 2rem;
+  align-content: center;
 }
 
 /* Hover States */
 
-.navigation li:hover{
+.navigation li:hover {
   background-color: #78a04d;
 }
 
-.nav-2 li:hover, .footer li:hover{
-color: #78a04d;
+.nav-2 li:hover,
+.footer li:hover {
+  color: #78a04d;
 }
 
+.row li:hover{
+background-color: #1E426E;
+color: white;
+}
+
+.blue-box:hover{
+  background-color: #e8f4F9;
+  border: 0.1rem solid #1E426E;
+  color: #1E426E;
+}
 
 /* Pie Chart */
-@property --p{
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 0;
-  }
-  
-  .pie {
-    --p:20;
-    --b:22px;
-    --c:darkred;
-    --w:150px;
-    
-    width:var(--w);
-    aspect-ratio:1;
-    position:relative;
-    display:inline-grid;
-    margin:5px;
-    place-content:center;
-    font-size:25px;
-    font-weight:bold;
-    font-family:sans-serif;
-  }
-  .pie:before,
-  .pie:after {
-    content:"";
-    position:absolute;
-    border-radius:50%;
-  }
-  .pie:before {
-    inset:0;
-    background:
-      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
-      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-  }
-  .pie:after {
-    inset:calc(50% - var(--b)/2);
-    background:var(--c);
-    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
-  }
-  .animate {
-    animation:p 1s .5s both;
-  }
-  .no-round:before {
-    background-size:0 0,auto;
-  }
-  .no-round:after {
-    content:none;
-  }
-  @keyframes p {
-    from{--p:0}
-  }
-  
-  body {
-    background:#f2f2f2;
-  }
+@property --p {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
 
-  /* Bar Graph */
-  .chart div {
-    font: 12px sans-serif;
-    background-color: #750CE8;
-    text-align: right;
-    padding: 3px;
-    margin: 1px;
-    color: white;
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: darkred;
+  --w: 150px;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pie:before {
+  inset: 0;
+  background:
+    radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+  inset: calc(50% - var(--b)/2);
+  background: var(--c);
+  transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.animate {
+  animation: p 1s .5s both;
+}
+
+.no-round:before {
+  background-size: 0 0, auto;
+}
+
+.no-round:after {
+  content: none;
+}
+
+@keyframes p {
+  from {
+    --p: 0
   }
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/* Bar Graph */
+.chart div {
+  font: 12px sans-serif;
+  background-color: #750CE8;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
