@@ -48,11 +48,18 @@ h1{
     font-weight: 700;
 }
 
-.nav-2 li:hover{
+/* Hover States */
+
+.navigation li:hover{
+  background-color: #78a04d;
+}
+
+.nav-2 li:hover, .footer li:hover{
 color: #78a04d;
 }
 
-/* Pie Chart*/
+
+/* Pie Chart */
 @property --p{
     syntax: '<number>';
     inherits: true;
