@@ -1,3 +1,5 @@
+/* Styling Smallest First */
+/* pie chart threw warnings lines 346 and 369 */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,6 +38,11 @@ h2,
 p {
   margin-top: 1.5rem;
   text-align: center;
+}
+
+h1{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .nav-2 {
@@ -85,13 +92,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
 }
 
 .row li {
@@ -172,7 +172,7 @@ section{
   margin-right: auto;
 }
 
-.community .blue-box{
+.community .blue-box, .your-home .blue-box{
   width: 100%;
   max-width: 100%;
   margin: auto;
@@ -192,8 +192,10 @@ section{
 .transparent{
 background-color: #e8f4F9;
 opacity: 85%;
-margin: 2rem;
-max-width: 22rem;
+max-width: 25rem;
+margin: auto;
+padding-top: 1rem;
+padding-bottom: 1rem;
 }
 
 .transparent h3, .transparent p{
@@ -203,11 +205,98 @@ max-width: 22rem;
 .transparent h3{
   text-transform: uppercase;
   font-size: 1.5rem;
-  margin-top: 2rem;
 }
 
 .transparent p:last-child{
   color: #2A5EA5;
+}
+
+.main-container .main-content p{
+  text-align: left;
+}
+
+.transparent p{
+  text-align: left;
+  padding-left: 1rem;
+}
+
+/* Your Home*/
+.your-home{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container-home{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 13rem;
+}
+
+.container-home h2{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.your-home-content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.your-home-content h2{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.your-home-content p{
+  text-align: left;
+}
+
+.help{
+  background-color: #e2e2e2;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.help h2{
+  font-size: 2rem;
+}
+
+.help-box{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 6rem;
+  border: 0.1rem solid #e2e2e2;
+  margin: auto 1.5rem;
+  justify-content: center;
+}
+
+.your-home-content p:nth-child(even),
+.help p{
+  color: #2A5EA5;
+}
+
+.help-box h3, .help-box p{
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.help-box h3, .help h2{
+  text-transform: uppercase;
+}
+
+.help .help-box:last-child{
   margin-bottom: 2rem;
 }
 
@@ -217,8 +306,9 @@ max-width: 22rem;
 }
 
 .nav-2 li:hover,
-.footer li:hover {
-  color: #78a04d;
+.footer li:hover,
+.green:hover{
+  color: #78a04d !important;
 }
 
 .row li:hover {
@@ -232,7 +322,9 @@ max-width: 22rem;
   color: #1E426E;
 }
 
+
 /* Pie Chart */
+/* lines 346 and 369 threw warnings */
 .pie-wrapper {
   display: inline-block;
   width: 150px;
