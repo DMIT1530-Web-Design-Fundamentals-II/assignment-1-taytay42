@@ -40,7 +40,7 @@ p {
   text-align: center;
 }
 
-h1{
+h1 {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -105,7 +105,7 @@ footer {
 }
 
 /* Index Main content */
-.main-content {
+.main-content-index {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -146,7 +146,7 @@ footer {
   margin-top: 0;
 }
 
-section{
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,16 +154,16 @@ section{
 }
 
 /* Community */
-.community{
-  display:flex;
+.community {
+  display: flex;
   justify-content: center;
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
 
-.container-comm{
+.container-comm {
   display: flex;
   flex-direction: column;
   max-width: 30rem;
@@ -172,16 +172,17 @@ section{
   margin-right: auto;
 }
 
-.community .blue-box, .your-home .blue-box{
+.community .blue-box,
+.your-home .blue-box {
   width: 100%;
   max-width: 100%;
   margin: auto;
 }
 
-.building{
+.building {
   display: flex;
   width: 100%;
-  background-image:url(../img/building-stronger.png);
+  background-image: url(../img/building-stronger.png);
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
@@ -189,39 +190,40 @@ section{
   margin-top: 1rem;
 }
 
-.transparent{
-background-color: #e8f4F9;
-opacity: 85%;
-max-width: 25rem;
-margin: auto;
-padding-top: 1rem;
-padding-bottom: 1rem;
+.transparent {
+  background-color: #e8f4F9;
+  opacity: 85%;
+  max-width: 25rem;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.transparent h3, .transparent p{
+.transparent h3,
+.transparent p {
   opacity: 100%;
 }
 
-.transparent h3{
+.transparent h3 {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
 
-.transparent p:last-child{
+.transparent p:last-child {
   color: #2A5EA5;
 }
 
-.main-container .main-content p{
+.main-container .main-content p {
   text-align: left;
 }
 
-.transparent p{
+.transparent p {
   text-align: left;
   padding-left: 1rem;
 }
 
 /* Your Home*/
-.your-home{
+.your-home {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -232,7 +234,7 @@ padding-bottom: 1rem;
   padding: 1rem;
 }
 
-.container-home{
+.container-home {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
@@ -241,38 +243,39 @@ padding-bottom: 1rem;
   max-width: 13rem;
 }
 
-.container-home h2{
+.container-home h2 {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.your-home-content{
+.your-home-content {
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-.your-home-content h2{
+
+.your-home-content h2 {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
-.your-home-content p{
+.your-home-content p {
   text-align: left;
 }
 
-.help{
+.help {
   background-color: #e2e2e2;
   gap: 2rem;
   justify-content: center;
   margin-top: 1.5rem;
 }
 
-.help h2{
+.help h2 {
   font-size: 2rem;
 }
 
-.help-box{
+.help-box {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -283,20 +286,22 @@ padding-bottom: 1rem;
 }
 
 .your-home-content p:nth-child(even),
-.help p{
+.help p {
   color: #2A5EA5;
 }
 
-.help-box h3, .help-box p{
+.help-box h3,
+.help-box p {
   margin-top: 0;
   font-weight: 400;
 }
 
-.help-box h3, .help h2{
+.help-box h3,
+.help h2 {
   text-transform: uppercase;
 }
 
-.help .help-box:last-child{
+.help .help-box:last-child {
   margin-bottom: 2rem;
 }
 
@@ -307,7 +312,7 @@ padding-bottom: 1rem;
 
 .nav-2 li:hover,
 .footer li:hover,
-.green:hover{
+.green:hover {
   color: #78a04d !important;
 }
 
@@ -407,4 +412,18 @@ body {
   padding: 3px;
   margin: 1px;
   color: white;
+}
+
+@media screen and (max-width: 50rem) {
+  .container {
+    max-width: 50rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 81.25rem) {
+  .container {
+    max-width: 81.25rem;
+    margin: auto;
+  }
 }
